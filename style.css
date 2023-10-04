@@ -1,0 +1,68 @@
+:root {
+  --body-color: #3d3d3d;
+  --h1-color: #ff6f00;
+  --camViewP-color-1: #ff6f00d9;
+  --camViewP-color-2: #ffffff;
+  --camViewP-color-3: #ffffffb3;
+  --highlighter-color-1: #00ff0040;
+  --highlighter-color-2: #ffffff;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  color: var(--body-color);
+}
+
+h1 {
+  font-style: italic;
+  color: var(--h1-color);
+}
+
+video {
+  display: block;
+}
+
+section {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+
+.removed {
+  display: none;
+}
+
+invisible {
+  opacity: 0.2;
+}
+
+.camView {
+  position: relative;
+  float: relative;
+  width: calc(100% -20%);
+  margin: 10px;
+  cursor: pointer;
+}
+
+.camView p {
+  position: absolute;
+  padding: 5px;
+  background-color: var(--camViewP-color-1);
+  color: var(--camViewP-color-2);
+  border: 1px dashed var(--camViewP-color-3);
+  z-index: 2;
+  font-size: 12px;
+}
+
+.highlighter {
+  background: var(--highlighter-color-1);
+  border: 1px dashed var(--highlighter-color-2);
+  z-index: 1;
+  position: absolute;
+}
