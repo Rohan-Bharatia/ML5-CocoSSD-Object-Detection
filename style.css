@@ -5,7 +5,7 @@
   --camViewP-color-2: #ffffff;
   --camViewP-color-3: #ffffffb3;
   --highlighter-color-1: #00ff0040;
-  --highlighter-color-2: #ffffff;
+  --highlighter-color-2: var(--camViewP-color-2);
 }
 
 * {
